@@ -90,29 +90,90 @@
 //     }).catch((err) => {
 //         console.log(err);
 //     });
-let data;
+// let data;
+// GetProductsById().then();
+// async function GetProductsById() {
+// fetch("https://northwind.vercel.app/api/products/77")
+//     .then((res) => {
+//         return res.json();
+//     }).then((value) => {
+//         data = value;
+//     }).catch((err) => {
+//         console.log(err);
+//     });
 
-
-GetProductsById().then();
-
-
-async function GetProductsById() {
-    // fetch("https://northwind.vercel.app/api/products/77")
-    //     .then((res) => {
-    //         return res.json();
-    //     }).then((value) => {
-    //         data = value;
-    //     }).catch((err) => {
-    //         console.log(err);
-    //     });
-
-    let res = await fetch("https://northwind.vercel.app/api/products/77");
-    let resData = await res.json();
-    data = resData;
-    console.log(data);
-}
+//     let res = await fetch("https://northwind.vercel.app/api/products/77");
+//     let resData = await res.json();
+//     data = resData;
+//     console.log(data);
+// }
 
 
 
 
-// //#endregion
+//#endregion
+
+//#region Axios
+
+// const axios = require("axios");
+
+
+// const axiosInstance = axios.create({
+//     baseURL: "https://643d0774f0ec48ce904fcb4e.mockapi.io/",
+//     headers: {
+//         'Content-Type': "application/json"
+//     },
+//     timeout: 1000
+// })
+
+
+// for (let i = 0; i < 50; i++) {
+//     axiosInstance.delete(`todo/${i}`)
+//         .then((res) => {
+//         }).catch((err) => {
+//             console.log(err);
+//         })
+// }
+
+// axiosInstance.get("todo").then((res) => {
+//     console.log(res.data);
+// }).catch((err) => {
+//     console.log(err);
+// })
+// axiosInstance.get("todo/43")
+//     .then((res) => {
+//         console.log(res.data);
+//     }).catch((err) => {
+//         console.log(err);
+//     })
+
+// axiosInstance.post("", {
+//     "title": "District Integration 9:39",
+//     "completed": false,
+// }).then((res) => {
+//     console.log(res.data);
+// }).catch((err) => {
+//     console.log(err);
+// })
+
+// const id = 35;
+
+// axiosInstance.delete(`/${id}`)
+//     .then((res) => {
+//         console.log(res);
+//     }).catch((err) => {
+//         console.log(err);
+//     })
+// axiosInstance.put(`/${id}`, {
+//     "title": "District Web Executive",
+//     "completed": true
+// })
+//     .then((res) => {
+//         console.log(res);
+//     }).catch((err) => {
+//         console.log(err);
+//     })
+
+
+//#endregion
+
